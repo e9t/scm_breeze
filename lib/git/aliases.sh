@@ -101,7 +101,7 @@ if [ "$git_setup_aliases" = "yes" ]; then
   __git_alias "$git_difftool_alias"                 'git' 'difftool'
 
   # Custom default format for git log
-  git_log_command="log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+  git_log_command="log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an <%ae>%Creset' --abbrev-commit"
   __git_alias "$git_log_alias"                      'git' "$git_log_command"
 
   # Same as the above, but displays all the branches and remotes
